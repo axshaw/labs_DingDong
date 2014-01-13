@@ -1,0 +1,19 @@
+PODS:
+  - Facebook-iOS-SDK (3.11.0)
+  - ObjectiveSugar (0.9)
+  - Parse-iOS-SDK (1.2.18):
+    - Facebook-iOS-SDK (~> 3.7)
+  - SocketRocket (0.3.1-beta2)
+
+DEPENDENCIES:
+  - ObjectiveSugar (~> 0.5)
+  - Parse-iOS-SDK (~> 1.2.18)
+  - SocketRocket (~> 0.3.1-beta2)
+
+SPEC CHECKSUMS:
+  Facebook-iOS-SDK: 2eb12f9ed04f3d3956f0a4fb0e4e60c824dcd101
+  ObjectiveSugar: 81337e36790b5a157ee6ccdcf65c91393ca5d900
+  Parse-iOS-SDK: 48bfd538a107b6e1f29eebe59fa80c0f0b844dd1
+  SocketRocket: 7ac946bcce46287a791dfff3c1f8daa692821dae
+
+COCOAPODS: 0.28.0

@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18536B0C1883F2FE0016D4D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18536B0B1883F2FE0016D4D3 /* Foundation.framework */; };
+		18536B0E1883F2FE0016D4D3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18536B0D1883F2FE0016D4D3 /* CoreGraphics.framework */; };
+		18536B101883F2FE0016D4D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18536B0F1883F2FE0016D4D3 /* UIKit.framework */; };
+		18536B161883F2FE0016D4D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18536B141883F2FE0016D4D3 /* InfoPlist.strings */; };
+		18536B181883F2FE0016D4D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18536B171883F2FE0016D4D3 /* main.m */; };
+		18536B1C1883F2FE0016D4D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18536B1B1883F2FE0016D4D3 /* AppDelegate.m */; };
+		18536B1E1883F2FE0016D4D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18536B1D1883F2FE0016D4D3 /* Images.xcassets */; };
+		18536B251883F2FE0016D4D3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18536B241883F2FE0016D4D3 /* XCTest.framework */; };
+		18536B261883F2FE0016D4D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18536B0B1883F2FE0016D4D3 /* Foundation.framework */; };
+		18536B271883F2FE0016D4D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18536B0F1883F2FE0016D4D3 /* UIKit.framework */; };
+		18536B2F1883F2FE0016D4D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18536B2D1883F2FE0016D4D3 /* InfoPlist.strings */; };
+		18536B311883F2FE0016D4D3 /* DingDongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18536B301883F2FE0016D4D3 /* DingDongTests.m */; };
+		18536B3C1883FFE00016D4D3 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18536B3B1883FFE00016D4D3 /* HomeViewController.m */; };
+		18536B3E1884014D0016D4D3 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18536B3D1884014D0016D4D3 /* Storyboard.storyboard */; };
+		96CDA15E60684C20BB5C259B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0288C6EC3C6D41C684DEFCDF /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18536B281883F2FE0016D4D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18536B001883F2FE0016D4D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18536B071883F2FE0016D4D3;
+			remoteInfo = DingDong;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0288C6EC3C6D41C684DEFCDF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		18536B081883F2FE0016D4D3 /* DingDong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DingDong.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18536B0B1883F2FE0016D4D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18536B0D1883F2FE0016D4D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18536B0F1883F2FE0016D4D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18536B131883F2FE0016D4D3 /* DingDong-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DingDong-Info.plist"; sourceTree = "<group>"; };
+		18536B151883F2FE0016D4D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18536B171883F2FE0016D4D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18536B191883F2FE0016D4D3 /* DingDong-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DingDong-Prefix.pch"; sourceTree = "<group>"; };
+		18536B1A1883F2FE0016D4D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18536B1B1883F2FE0016D4D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18536B1D1883F2FE0016D4D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18536B231883F2FE0016D4D3 /* DingDongTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DingDongTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18536B241883F2FE0016D4D3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		18536B2C1883F2FE0016D4D3 /* DingDongTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DingDongTests-Info.plist"; sourceTree = "<group>"; };
+		18536B2E1883F2FE0016D4D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18536B301883F2FE0016D4D3 /* DingDongTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DingDongTests.m; sourceTree = "<group>"; };
+		18536B3A1883FFE00016D4D3 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		18536B3B1883FFE00016D4D3 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		18536B3D1884014D0016D4D3 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		73C3D5000B8A4F3B9AEB85FA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18536B051883F2FE0016D4D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18536B0E1883F2FE0016D4D3 /* CoreGraphics.framework in Frameworks */,
+				18536B101883F2FE0016D4D3 /* UIKit.framework in Frameworks */,
+				18536B0C1883F2FE0016D4D3 /* Foundation.framework in Frameworks */,
+				96CDA15E60684C20BB5C259B /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18536B201883F2FE0016D4D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18536B251883F2FE0016D4D3 /* XCTest.framework in Frameworks */,
+				18536B271883F2FE0016D4D3 /* UIKit.framework in Frameworks */,
+				18536B261883F2FE0016D4D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18536AFF1883F2FE0016D4D3 = {
+			isa = PBXGroup;
+			children = (
+				18536B3D1884014D0016D4D3 /* Storyboard.storyboard */,
+				18536B111883F2FE0016D4D3 /* DingDong */,
+				18536B2A1883F2FE0016D4D3 /* DingDongTests */,
+				18536B0A1883F2FE0016D4D3 /* Frameworks */,
+				18536B091883F2FE0016D4D3 /* Products */,
+				73C3D5000B8A4F3B9AEB85FA /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		18536B091883F2FE0016D4D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18536B081883F2FE0016D4D3 /* DingDong.app */,
+				18536B231883F2FE0016D4D3 /* DingDongTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18536B0A1883F2FE0016D4D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18536B0B1883F2FE0016D4D3 /* Foundation.framework */,
+				18536B0D1883F2FE0016D4D3 /* CoreGraphics.framework */,
+				18536B0F1883F2FE0016D4D3 /* UIKit.framework */,
+				18536B241883F2FE0016D4D3 /* XCTest.framework */,
+				0288C6EC3C6D41C684DEFCDF /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18536B111883F2FE0016D4D3 /* DingDong */ = {
+			isa = PBXGroup;
+			children = (
+				18536B1A1883F2FE0016D4D3 /* AppDelegate.h */,
+				18536B1B1883F2FE0016D4D3 /* AppDelegate.m */,
+				18536B1D1883F2FE0016D4D3 /* Images.xcassets */,
+				18536B121883F2FE0016D4D3 /* Supporting Files */,
+				18536B3A1883FFE00016D4D3 /* HomeViewController.h */,
+				18536B3B1883FFE00016D4D3 /* HomeViewController.m */,
+			);
+			path = DingDong;
+			sourceTree = "<group>";
+		};
+		18536B121883F2FE0016D4D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18536B131883F2FE0016D4D3 /* DingDong-Info.plist */,
+				18536B141883F2FE0016D4D3 /* InfoPlist.strings */,
+				18536B171883F2FE0016D4D3 /* main.m */,
+				18536B191883F2FE0016D4D3 /* DingDong-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18536B2A1883F2FE0016D4D3 /* DingDongTests */ = {
+			isa = PBXGroup;
+			children = (
+				18536B301883F2FE0016D4D3 /* DingDongTests.m */,
+				18536B2B1883F2FE0016D4D3 /* Supporting Files */,
+			);
+			path = DingDongTests;
+			sourceTree = "<group>";
+		};
+		18536B2B1883F2FE0016D4D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18536B2C1883F2FE0016D4D3 /* DingDongTests-Info.plist */,
+				18536B2D1883F2FE0016D4D3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18536B071883F2FE0016D4D3 /* DingDong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18536B341883F2FE0016D4D3 /* Build configuration list for PBXNativeTarget "DingDong" */;
+			buildPhases = (
+				2E144903D872480FA96FCE50 /* Check Pods Manifest.lock */,
+				18536B041883F2FE0016D4D3 /* Sources */,
+				18536B051883F2FE0016D4D3 /* Frameworks */,
+				18536B061883F2FE0016D4D3 /* Resources */,
+				326174177DCF4114824C9D68 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DingDong;
+			productName = DingDong;
+			productReference = 18536B081883F2FE0016D4D3 /* DingDong.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18536B221883F2FE0016D4D3 /* DingDongTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18536B371883F2FE0016D4D3 /* Build configuration list for PBXNativeTarget "DingDongTests" */;
+			buildPhases = (
+				18536B1F1883F2FE0016D4D3 /* Sources */,
+				18536B201883F2FE0016D4D3 /* Frameworks */,
+				18536B211883F2FE0016D4D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18536B291883F2FE0016D4D3 /* PBXTargetDependency */,
+			);
+			name = DingDongTests;
+			productName = DingDongTests;
+			productReference = 18536B231883F2FE0016D4D3 /* DingDongTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18536B001883F2FE0016D4D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = CTMLABS;
+				TargetAttributes = {
+					18536B221883F2FE0016D4D3 = {
+						TestTargetID = 18536B071883F2FE0016D4D3;
+					};
+				};
+			};
+			buildConfigurationList = 18536B031883F2FE0016D4D3 /* Build configuration list for PBXProject "DingDong" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 18536AFF1883F2FE0016D4D3;
+			productRefGroup = 18536B091883F2FE0016D4D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18536B071883F2FE0016D4D3 /* DingDong */,
+				18536B221883F2FE0016D4D3 /* DingDongTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18536B061883F2FE0016D4D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18536B161883F2FE0016D4D3 /* InfoPlist.strings in Resources */,
+				18536B1E1883F2FE0016D4D3 /* Images.xcassets in Resources */,
+				18536B3E1884014D0016D4D3 /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18536B211883F2FE0016D4D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18536B2F1883F2FE0016D4D3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E144903D872480FA96FCE50 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		326174177DCF4114824C9D68 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18536B041883F2FE0016D4D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18536B1C1883F2FE0016D4D3 /* AppDelegate.m in Sources */,
+				18536B181883F2FE0016D4D3 /* main.m in Sources */,
+				18536B3C1883FFE00016D4D3 /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18536B1F1883F2FE0016D4D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18536B311883F2FE0016D4D3 /* DingDongTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18536B291883F2FE0016D4D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18536B071883F2FE0016D4D3 /* DingDong */;
+			targetProxy = 18536B281883F2FE0016D4D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18536B141883F2FE0016D4D3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18536B151883F2FE0016D4D3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		18536B2D1883F2FE0016D4D3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18536B2E1883F2FE0016D4D3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18536B321883F2FE0016D4D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18536B331883F2FE0016D4D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18536B351883F2FE0016D4D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73C3D5000B8A4F3B9AEB85FA /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DingDong/DingDong-Prefix.pch";
+				INFOPLIST_FILE = "DingDong/DingDong-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		18536B361883F2FE0016D4D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73C3D5000B8A4F3B9AEB85FA /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DingDong/DingDong-Prefix.pch";
+				INFOPLIST_FILE = "DingDong/DingDong-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		18536B381883F2FE0016D4D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DingDong.app/DingDong";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DingDong/DingDong-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DingDongTests/DingDongTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		18536B391883F2FE0016D4D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DingDong.app/DingDong";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DingDong/DingDong-Prefix.pch";
+				INFOPLIST_FILE = "DingDongTests/DingDongTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18536B031883F2FE0016D4D3 /* Build configuration list for PBXProject "DingDong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18536B321883F2FE0016D4D3 /* Debug */,
+				18536B331883F2FE0016D4D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18536B341883F2FE0016D4D3 /* Build configuration list for PBXNativeTarget "DingDong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18536B351883F2FE0016D4D3 /* Debug */,
+				18536B361883F2FE0016D4D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18536B371883F2FE0016D4D3 /* Build configuration list for PBXNativeTarget "DingDongTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18536B381883F2FE0016D4D3 /* Debug */,
+				18536B391883F2FE0016D4D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18536B001883F2FE0016D4D3 /* Project object */;
+}
