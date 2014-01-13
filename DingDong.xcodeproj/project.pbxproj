@@ -21,6 +21,7 @@
 		18536B311883F2FE0016D4D3 /* DingDongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18536B301883F2FE0016D4D3 /* DingDongTests.m */; };
 		18536B3C1883FFE00016D4D3 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18536B3B1883FFE00016D4D3 /* HomeViewController.m */; };
 		18536B3E1884014D0016D4D3 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18536B3D1884014D0016D4D3 /* Storyboard.storyboard */; };
+		18536B4018844D8E0016D4D3 /* girl.png in Resources */ = {isa = PBXBuildFile; fileRef = 18536B3F18844D8E0016D4D3 /* girl.png */; };
 		96CDA15E60684C20BB5C259B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0288C6EC3C6D41C684DEFCDF /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		18536B3A1883FFE00016D4D3 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		18536B3B1883FFE00016D4D3 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		18536B3D1884014D0016D4D3 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		18536B3F18844D8E0016D4D3 /* girl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = girl.png; sourceTree = "<group>"; };
 		73C3D5000B8A4F3B9AEB85FA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 		18536AFF1883F2FE0016D4D3 = {
 			isa = PBXGroup;
 			children = (
+				18536B3F18844D8E0016D4D3 /* girl.png */,
 				18536B3D1884014D0016D4D3 /* Storyboard.storyboard */,
 				18536B111883F2FE0016D4D3 /* DingDong */,
 				18536B2A1883F2FE0016D4D3 /* DingDongTests */,
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18536B161883F2FE0016D4D3 /* InfoPlist.strings in Resources */,
+				18536B4018844D8E0016D4D3 /* girl.png in Resources */,
 				18536B1E1883F2FE0016D4D3 /* Images.xcassets in Resources */,
 				18536B3E1884014D0016D4D3 /* Storyboard.storyboard in Resources */,
 			);

@@ -31,10 +31,50 @@
     [super viewDidLoad];
     self.title = @"DingDong";
     // Do any additional setup after loading the view.
+
+     //Upload test image
+     UIImage *image = [UIImage imageNamed:@"girl.png"];
+     NSData *imageData = UIImagePNGRepresentation(image);
+     PFFile *imageFile = [PFFile fileWithName:@"girl.png" data:imageData];
+     
+     PFObject *knocker = [PFObject objectWithClassName:@"knocker"];
+     knocker[@"imageFile"] = imageFile;
+     [knocker saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        
+         if(succeeded){
+             [[knocker objectForKey:@"imageFile"] getDataInBackgroundWithBlock:^(NSData *data, NSError *error){
+                 
+                 if( data ) {
+                     UIImage *image = [UIImage imageWithData:data];
+                     [self.imageview setImage:image];
+                     //[webView loadData:data MIMEType:@"application/pdf" textEncodingName:nil baseURL:nil];
+                     //[progressView setHidden:YES];
+                     
+                 }
+                 if( error ) {
+                     
+                     NSLog(@"Failed to load file with error %@", error);
+                 }
+             }progressBlock:^(int percentDone) {
+                 
+                 float percent = percentDone/100;
+                 NSLog(@"percent = %f", percent);
+                 //[progressView setProgress:percent animated:NO];
+             }];
+         }
+
+         
+         
+     }];
+        
     
-    self.videoSocket = [[SRWebSocket alloc] initWithURL:[[NSURL alloc] initWithString:@"http://172.26.36.119/"]];
-    self.videoSocket.delegate = self;
-    [self.videoSocket open];
+    
+    
+    
+    
+    //self.videoSocket = [[SRWebSocket alloc] initWithURL:[[NSURL alloc] initWithString:@"http://172.26.36.119/"]];
+    //self.videoSocket.delegate = self;
+    //[self.videoSocket open];
     //[self.videoSocket send:self.input.text]
     
 }
