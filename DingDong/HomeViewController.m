@@ -17,6 +17,46 @@
 
 @implementation HomeViewController
 
+- (void) receiveTestNotification:(NSNotification *) notification
+{
+    NSString *theString = [notification object];
+    NSLog(@"the string = %@", theString);
+    
+    //Query latest image
+    PFQuery *query = [PFQuery queryWithClassName:@"knocker"];
+    [query getObjectInBackgroundWithId:theString block:^(PFObject *knocker, NSError *error) {
+        
+        // Do something with the returned PFObject in the gameScore variable.
+        NSLog(@"%@", knocker);
+        
+        [[knocker objectForKey:@"imageFile"] getDataInBackgroundWithBlock:^(NSData *data, NSError *error){
+            
+            if( data ) {
+                UIImage *image = [UIImage imageWithData:data];
+                [self.imageview setImage:image];
+                
+                
+            }
+            if( error ) {
+                
+                NSLog(@"Failed to load file with error %@", error);
+            }
+        }progressBlock:^(int percentDone) {
+            
+            float percent = percentDone/100;
+            NSLog(@"percent = %f", percent);
+        }];
+        
+        
+        
+        
+    }];
+    
+
+    
+}
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -26,47 +66,20 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.title = @"DingDong";
     // Do any additional setup after loading the view.
 
-     //Upload test image
-     UIImage *image = [UIImage imageNamed:@"girl.png"];
-     NSData *imageData = UIImagePNGRepresentation(image);
-     PFFile *imageFile = [PFFile fileWithName:@"girl.png" data:imageData];
-     
-     PFObject *knocker = [PFObject objectWithClassName:@"knocker"];
-     knocker[@"imageFile"] = imageFile;
-     [knocker saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        
-         if(succeeded){
-             [[knocker objectForKey:@"imageFile"] getDataInBackgroundWithBlock:^(NSData *data, NSError *error){
-                 
-                 if( data ) {
-                     UIImage *image = [UIImage imageWithData:data];
-                     [self.imageview setImage:image];
-                     //[webView loadData:data MIMEType:@"application/pdf" textEncodingName:nil baseURL:nil];
-                     //[progressView setHidden:YES];
-                     
-                 }
-                 if( error ) {
-                     
-                     NSLog(@"Failed to load file with error %@", error);
-                 }
-             }progressBlock:^(int percentDone) {
-                 
-                 float percent = percentDone/100;
-                 NSLog(@"percent = %f", percent);
-                 //[progressView setProgress:percent animated:NO];
-             }];
-         }
-
-         
-         
-     }];
-        
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(receiveTestNotification:)
+                                                 name:@"TestNotification"
+                                               object:nil];
+    
+    
     
     
     
@@ -84,6 +97,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void) dealloc
+{
+    // If you don't remove yourself as an observer, the Notification Center
+    // will continue to try and send notification objects to the deallocated
+    // object.
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 
 #pragma mark - Web Socket 
 

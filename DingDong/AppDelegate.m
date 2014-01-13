@@ -68,6 +68,16 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 - (void)application:(UIApplication *)application
 didReceiveRemoteNotification:(NSDictionary *)userInfo {
     [PFPush handlePush:userInfo];
+    
+    NSLog(@"userInfo = %@", userInfo);
+    NSLog(@"ID = %@", [userInfo objectForKey:@"ID"]);
+    [[NSNotificationCenter defaultCenter]
+     
+     postNotificationName:@"TestNotification"
+     object:[userInfo objectForKey:@"ID"]];
+
+    
+    
 }
 
 
